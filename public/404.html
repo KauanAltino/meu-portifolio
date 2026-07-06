@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecionando...</title>
+    <script>
+      const segmentCount = 1;
+      const l = window.location;
+      const base = l.pathname.split('/').slice(0, 1 + segmentCount).join('/');
+      const redirect = `${base}/?p=${l.pathname
+        .slice(1)
+        .split('/')
+        .slice(segmentCount)
+        .join('/')}${l.search ? `&q=${l.search.slice(1)}` : ''}${l.hash}`;
+      l.replace(redirect);
+    </script>
+  </head>
+  <body></body>
+</html>
