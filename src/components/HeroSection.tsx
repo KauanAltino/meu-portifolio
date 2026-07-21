@@ -64,15 +64,15 @@ export default function HeroSection() {
         <a href="#projetos" className="btn btn-primary">
           Ver Projetos
         </a>
-        <a href="/cv-kauan-altino.pdf" className="btn btn-secondary" download>
-          <FaDownload /> Download CV
-        </a>
         <a href="https://linkedin.com/in/kauanaltino" target="_blank" rel="noreferrer" className="btn btn-ghost">
           <FaLinkedin /> LinkedIn
         </a>
         <a href="https://github.com/KauanAltino" target="_blank" rel="noreferrer" className="btn btn-ghost">
           <FaGithub /> GitHub
         </a>
+        <a href="/cv-kauan-altino.pdf" className="btn btn-secondary" download>
+          <FaDownload /> Meu Curriculo
+        </a>        
       </motion.div>
     </section>
   )

@@ -3,6 +3,8 @@ import GlassCard from './GlassCard'
 import { ABOUT_TIMELINE } from '../utils/constants'
 
 export default function AboutSection() {
+  const keySkills = ['Power BI', 'Python', 'SQL', 'Excel', 'ETL', 'Pandas']
+
   return (
     <section id="sobre" className="section-shell">
       <SectionTitle
@@ -27,6 +29,14 @@ export default function AboutSection() {
             processos de ETL, modelagem de dados e soluções analíticas que apoiem decisões estratégicas e escaláveis.
           </p>
         </GlassCard>
+      </div>
+
+      <div className="about-skills-strip" aria-label="Competências principais">
+        {keySkills.map((skill) => (
+          <span key={skill} className="about-skill-pill">
+            {skill}
+          </span>
+        ))}
       </div>
 
       <div className="timeline">

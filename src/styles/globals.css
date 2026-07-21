@@ -353,6 +353,27 @@ h4 {
   color: var(--text-secondary);
 }
 
+.about-skills-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.about-skill-pill {
+  border: 1px solid var(--line-color);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 0.85rem;
+}
+
+:root[data-theme='light'] .about-skill-pill {
+  background: rgba(2, 6, 23, 0.03);
+}
+
 .timeline {
   margin-top: 1rem;
   border-left: 1px solid var(--line-color);
@@ -458,6 +479,40 @@ h4 {
 
 .projects-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.projects-grid--full {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.projects-footer-cta {
+  margin-top: 1rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--line-color);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.projects-footer-cta p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.projects-page-bottom {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.projects-return-button {
+  width: 100%;
+  text-align: center;
+  padding-block: 0.95rem;
 }
 
 .project-card {
@@ -706,6 +761,23 @@ h4 {
   margin: 1rem auto;
 }
 
+.projects-page .footer,
+.blog-page .footer,
+.not-found-page .footer {
+  margin-top: 0.1rem;
+}
+
+.projects-page-section {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.project-comments-card {
+  display: grid;
+  gap: 0.65rem;
+}
+
 .blog-page-header,
 .not-found-page {
   border: 1px solid var(--line-color);
@@ -791,6 +863,7 @@ h4 {
 
   .about-grid,
   .projects-grid,
+  .projects-grid--full,
   .skills-grid,
   .certificates-grid,
   .blog-grid,

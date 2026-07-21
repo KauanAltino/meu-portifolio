@@ -11,10 +11,8 @@ import Navbar from '../components/Navbar'
 import ProjectsSection from '../components/ProjectsSection'
 import ScrollProgress from '../components/ScrollProgress'
 import StatsSection from '../components/StatsSection'
-import TechnologiesSection from '../components/TechnologiesSection'
 
 const CertificatesSection = lazy(() => import('../components/CertificatesSection'))
-const TestimonialsSection = lazy(() => import('../components/TestimonialsSection'))
 
 export default function HomePage() {
   return (
@@ -26,13 +24,11 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <AboutSection />
-        <TechnologiesSection />
         <ProjectsSection />
         <StatsSection />
         <ExperienceSection />
         <Suspense fallback={<div className="section-shell">Carregando seções...</div>}>
           <CertificatesSection />
-          <TestimonialsSection />
         </Suspense>
         <BlogSection />
         <ContactSection />

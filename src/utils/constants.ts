@@ -2,9 +2,7 @@ import type {
   BlogPostPreview,
   Certificate,
   Project,
-  SkillCategory,
   Stat,
-  Testimonial,
   TimelineItem,
 } from './types'
 
@@ -15,63 +13,6 @@ export const NAV_LINKS = [
   { label: 'Projetos', href: '#projetos' },
   { label: 'Experiência', href: '#experiencia' },
   { label: 'Contato', href: '#contato' },
-]
-
-export const SKILL_CATEGORIES: SkillCategory[] = [
-  {
-    title: 'Data Analytics',
-    items: [
-      { name: 'Power BI', level: 90, icon: 'FaChartLine' },
-      { name: 'Visualização de Dados', level: 87, icon: 'FaChartLine' },
-      { name: 'Excel Avançado', level: 86, icon: 'FaTable' },
-      { name: 'Data Analytics', level: 88, icon: 'FaBrain' },
-    ],
-  },
-  {
-    title: 'Linguagens e Dados',
-    items: [
-      { name: 'Python', level: 85, icon: 'FaPython' },
-      { name: 'SQL', level: 88, icon: 'FaDatabase' },
-      { name: 'Java', level: 72, icon: 'FaCode' },
-      { name: 'Lógica de Programação', level: 90, icon: 'FaCubes' },
-    ],
-  },
-  {
-    title: 'Engenharia de Dados',
-    items: [
-      { name: 'Pandas', level: 84, icon: 'FaTable' },
-      { name: 'ETL com Python', level: 80, icon: 'FaNetworkWired' },
-      { name: 'Modelagem de Dados', level: 82, icon: 'FaDatabase' },
-      { name: 'Análise Exploratória', level: 86, icon: 'FaWandMagicSparkles' },
-    ],
-  },
-  {
-    title: 'Ambiente Corporativo',
-    items: [
-      { name: 'Análise de Processos', level: 84, icon: 'FaLayerGroup' },
-      { name: 'Documentação Técnica', level: 86, icon: 'FaCodeBranch' },
-      { name: 'Arquitetura de Sistemas', level: 80, icon: 'FaServer' },
-      { name: 'Requisitos Técnicos', level: 82, icon: 'FaToolbox' },
-    ],
-  },
-  {
-    title: 'Ferramentas',
-    items: [
-      { name: 'GitHub', level: 83, icon: 'FaGitAlt' },
-      { name: 'Excel', level: 86, icon: 'FaTable' },
-      { name: 'Power BI Desktop', level: 89, icon: 'FaChartLine' },
-      { name: 'Python (Pandas)', level: 84, icon: 'FaPython' },
-    ],
-  },
-  {
-    title: 'Soft Skills',
-    items: [
-      { name: 'Perfil Analítico', level: 92, icon: 'FaBrain' },
-      { name: 'Proatividade', level: 90, icon: 'FaBolt' },
-      { name: 'Comunicação Técnica', level: 85, icon: 'FaCode' },
-      { name: 'Aprendizado Contínuo', level: 94, icon: 'FaRobot' },
-    ],
-  },
 ]
 
 export const PROJECTS: Project[] = [
@@ -203,27 +144,6 @@ export const CERTIFICATES: Certificate[] = [
     issuer: 'ALURA / FIAP (2024)',
     image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80',
     viewUrl: 'https://www.fiap.com.br/',
-  },
-]
-
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    name: 'Mariana Lopes',
-    role: 'Product Manager',
-    content:
-      'A entrega foi impecável. Além de código de alta qualidade, tivemos melhorias reais de UX e performance.',
-  },
-  {
-    name: 'Rafael Mendes',
-    role: 'CEO, Startup SaaS',
-    content:
-      'Conseguiu transformar uma ideia complexa em um produto elegante e escalável em poucas semanas.',
-  },
-  {
-    name: 'Camila Souza',
-    role: 'Head de Dados',
-    content:
-      'A combinação de desenvolvimento e análise de dados acelerou decisões estratégicas da nossa equipe.',
   },
 ]
 

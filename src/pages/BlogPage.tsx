@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Footer from '../components/Footer'
 import { BLOG_PREVIEW } from '../utils/constants'
 
 export default function BlogPage() {
@@ -30,6 +31,8 @@ export default function BlogPage() {
           </article>
         ))}
       </section>
+
+      <Footer backHref="/#inicio" />
     </div>
   )
 }

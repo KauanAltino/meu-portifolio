@@ -1,47 +1,22 @@
-import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { FaArrowUpRightFromSquare, FaGithub } from 'react-icons/fa6'
 import GlassCard from './GlassCard'
 import SectionTitle from './SectionTitle'
 import { PROJECTS } from '../utils/constants'
 
-const FILTERS = ['Todos', 'Data', 'Automação'] as const
-
 export default function ProjectsSection() {
-  const [activeFilter, setActiveFilter] = useState<(typeof FILTERS)[number]>('Todos')
-
-  const filteredProjects = useMemo(() => {
-    if (activeFilter === 'Todos') {
-      return PROJECTS
-    }
-
-    return PROJECTS.filter((project) => project.category === activeFilter)
-  }, [activeFilter])
+  const featuredProjects = PROJECTS.slice(0, 2)
 
   return (
     <section id="projetos" className="section-shell">
       <SectionTitle
         eyebrow="Projetos"
-        title="Projetos direcionados para análise e engenharia de dados"
-        description="Iniciativas práticas com Power BI, Python, SQL e automação de rotinas analíticas."
+        title="Projetos em destaque"
+        description="Dois projetos principais na home para manter o site leve; a página completa reúne todo o portfólio."
       />
 
-      <div className="filter-row" role="tablist" aria-label="Filtros de projeto">
-        {FILTERS.map((filter) => (
-          <button
-            key={filter}
-            type="button"
-            role="tab"
-            aria-selected={activeFilter === filter}
-            className={activeFilter === filter ? 'is-active' : ''}
-            onClick={() => setActiveFilter(filter)}
-          >
-            {filter}
-          </button>
-        ))}
-      </div>
-
       <div className="projects-grid">
-        {filteredProjects.map((project, index) => (
+        {featuredProjects.map((project, index) => (
           <GlassCard key={project.title} delay={index * 0.03} className="project-card">
             <img src={project.image} alt={`Imagem do projeto ${project.title}`} loading="lazy" />
             <div className="project-content">
@@ -68,6 +43,13 @@ export default function ProjectsSection() {
             </div>
           </GlassCard>
         ))}
+      </div>
+
+      <div className="projects-footer-cta">
+        <p>Quer ver todos os projetos?</p>
+        <Link to="/projetos" className="btn btn-secondary">
+          Ver todos os projetos
+        </Link>
       </div>
     </section>
   )

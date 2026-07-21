@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Footer from '../components/Footer'
 
 export default function NotFoundPage() {
   return (
@@ -9,6 +10,8 @@ export default function NotFoundPage() {
       <Link to="/" className="btn btn-primary">
         Voltar ao início
       </Link>
+
+      <Footer backHref="/#inicio" />
     </div>
   )
 }

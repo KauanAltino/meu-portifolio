@@ -1,6 +1,10 @@
 import { FaArrowUp, FaGithub, FaLinkedin } from 'react-icons/fa6'
 
-export default function Footer() {
+type FooterProps = {
+  backHref?: string
+}
+
+export default function Footer({ backHref = '#inicio' }: FooterProps) {
   return (
     <footer className="footer">
       <div>
@@ -14,7 +18,7 @@ export default function Footer() {
           <FaGithub />
         </a>
       </div>
-      <a href="#inicio" className="back-to-top" aria-label="Voltar ao topo">
+      <a href={backHref} className="back-to-top" aria-label="Voltar ao topo">
         <FaArrowUp />
       </a>
     </footer>
