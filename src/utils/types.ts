@@ -11,7 +11,7 @@ export type SkillCategory = {
   items: Skill[]
 }
 
-export type ProjectCategory = 'Web' | 'Data' | 'Automação' | 'FiveM' | 'Mobile'
+export type ProjectCategory = 'Web' | 'Data' | 'Automação' | 'FiveM' | 'Mobile' | 'Java' |'Outros'
 
 export type Project = {
   title: string
@@ -21,7 +21,6 @@ export type Project = {
   status: 'Em Produção' | 'Concluído' | 'Em Evolução'
   category: ProjectCategory
   githubUrl: string
-  demoUrl: string
 }
 
 export type TimelineItem = {

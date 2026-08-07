@@ -36,9 +36,6 @@ export default function ProjectsSection() {
                 <a href={project.githubUrl} target="_blank" rel="noreferrer">
                   <FaGithub /> GitHub
                 </a>
-                <a href={project.demoUrl} target="_blank" rel="noreferrer">
-                  <FaArrowUpRightFromSquare /> Demo
-                </a>
               </div>
             </div>
           </GlassCard>

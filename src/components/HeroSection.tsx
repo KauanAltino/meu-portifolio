@@ -24,7 +24,7 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
       >
-        Disponível para oportunidades em Dados
+        Disponível para Oportunidades
       </motion.p>
 
       <motion.h1
@@ -50,9 +50,7 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.25 }}
       >
-        Profissional com formação em ADS (FIAP) e Pós em Data Analytics, com experiência
-        corporativa em arquitetura de sistemas e foco em análise de dados para apoiar decisões de
-        negócio.
+        Profissional com formação em ADS, Pós-Graduação em Data Analytics (FIAP) e certificações.
       </motion.p>
 
       <motion.div

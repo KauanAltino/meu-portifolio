@@ -88,11 +88,11 @@ export default function ContactSection() {
           <a href="https://github.com/KauanAltino" target="_blank" rel="noreferrer">
             <FaGithub /> GitHub
           </a>
-          <a href="mailto:kauanaltino@gmail.com">
-            <FaEnvelope /> kauanaltino@gmail.com
-          </a>
           <a href="https://wa.me/5511991145917" target="_blank" rel="noreferrer">
             <FaWhatsapp /> WhatsApp
+          </a>
+          <a href="mailto:kauanaltino@gmail.com">
+            <FaEnvelope /> kauanaltino@gmail.com
           </a>
         </aside>
       </div>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FaArrowUpRightFromSquare, FaGithub } from 'react-icons/fa6'
+import { FaGithub } from 'react-icons/fa6'
 import GlassCard from '../components/GlassCard'
 import Footer from '../components/Footer'
 import SectionTitle from '../components/SectionTitle'
@@ -43,9 +43,6 @@ export default function ProjectsPage() {
                 <div className="project-actions">
                   <a href={project.githubUrl} target="_blank" rel="noreferrer">
                     <FaGithub /> GitHub
-                  </a>
-                  <a href={project.demoUrl} target="_blank" rel="noreferrer">
-                    <FaArrowUpRightFromSquare /> Demo
                   </a>
                 </div>
               </div>

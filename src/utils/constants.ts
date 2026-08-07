@@ -9,7 +9,6 @@ import type {
 export const NAV_LINKS = [
   { label: 'Início', href: '#inicio' },
   { label: 'Sobre', href: '#sobre' },
-  { label: 'Tecnologias', href: '#tecnologias' },
   { label: 'Projetos', href: '#projetos' },
   { label: 'Experiência', href: '#experiencia' },
   { label: 'Contato', href: '#contato' },
@@ -17,14 +16,13 @@ export const NAV_LINKS = [
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Dashboard de Indicadores de Vendas',
-    description: 'Painel em Power BI com KPIs de vendas, evolução mensal e análise de performance.',
+    title: 'DayToday API',
+    description: 'API REST desenvolvida para gerenciar rotinas e hábitos pessoais, permitindo o cadastro e acompanhamento de metas de forma organizada.',
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
-    technologies: ['Power BI', 'Excel', 'Data Visualization'],
-    status: 'Em Evolução',
-    category: 'Data',
+    technologies: ['Java', 'REST API', 'Spring Boot', 'Maven'],
+    status: 'Concluído',
+    category: 'Java',
     githubUrl: 'https://github.com/KauanAltino',
-    demoUrl: 'https://app.powerbi.com/',
   },
   {
     title: 'Análise Exploratória de Dados com Python',
@@ -34,7 +32,6 @@ export const PROJECTS: Project[] = [
     status: 'Em Evolução',
     category: 'Data',
     githubUrl: 'https://github.com/KauanAltino',
-    demoUrl: 'https://github.com/KauanAltino',
   },
   {
     title: 'Consultas e Modelagem de Dados com SQL',
@@ -44,7 +41,6 @@ export const PROJECTS: Project[] = [
     status: 'Em Evolução',
     category: 'Data',
     githubUrl: 'https://github.com/KauanAltino',
-    demoUrl: 'https://github.com/KauanAltino',
   },
   {
     title: 'Pipeline de Preparação de Dados',
@@ -54,7 +50,6 @@ export const PROJECTS: Project[] = [
     status: 'Em Evolução',
     category: 'Data',
     githubUrl: 'https://github.com/KauanAltino',
-    demoUrl: 'https://github.com/KauanAltino',
   },
   {
     title: 'Automação de Relatórios',
@@ -64,7 +59,6 @@ export const PROJECTS: Project[] = [
     status: 'Em Evolução',
     category: 'Automação',
     githubUrl: 'https://github.com/KauanAltino',
-    demoUrl: 'https://github.com/KauanAltino',
   },
   {
     title: 'Análise de Processos Sistêmicos',
@@ -74,7 +68,6 @@ export const PROJECTS: Project[] = [
     status: 'Em Evolução',
     category: 'Data',
     githubUrl: 'https://github.com/KauanAltino',
-    demoUrl: 'https://linkedin.com/in/kauanaltino',
   },
 ]
 
@@ -98,7 +91,7 @@ export const ABOUT_TIMELINE: TimelineItem[] = [
     description: 'Conclusão do curso de Análise e Desenvolvimento de Sistemas com foco em evolução para a área de dados.',
   },
   {
-    year: '2026',
+    year: '2025 - 2026',
     title: 'Pós-graduação em Data Analytics (FIAP Pós-Tech)',
     subtitle: 'Especialização em análise de dados',
     description: 'Aprofundamento em Power BI, Python, SQL e visualização de dados para tomada de decisão.',
@@ -171,7 +164,6 @@ export const BLOG_PREVIEW: BlogPostPreview[] = [
 export const STATS: Stat[] = [
   { label: 'Projetos de Dados', value: 6, suffix: '+' },
   { label: 'Certificações', value: 6, suffix: '+' },
-  { label: 'Experiência Corporativa', value: 1, suffix: ' ano' },
   { label: 'Formações FIAP', value: 2, suffix: '' },
   { label: 'Anos estudando', value: 4, suffix: '+' },
 ]
