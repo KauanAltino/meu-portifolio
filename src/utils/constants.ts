@@ -1,7 +1,6 @@
 import type {
   BlogCategory,
   BlogPostPreview,
-  Certificate,
   Project,
   Stat,
   TimelineItem,
@@ -196,27 +195,6 @@ export const EXPERIENCE_TIMELINE: TimelineItem[] = [
     title: 'Analista de Dados | Engenharia de Dados Júnior',
     subtitle: 'Objetivo de carreira',
     description: 'Atuar com dados em contexto corporativo, apoiando decisões por meio de análises, automações e boas práticas de dados.',
-  },
-]
-
-export const CERTIFICATES: Certificate[] = [
-  {
-    title: 'Power BI Desktop',
-    issuer: 'ALURA (2025)',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80',
-    viewUrl: 'https://www.alura.com.br/',
-  },
-  {
-    title: 'Praticando Python',
-    issuer: 'ALURA (2024)',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80',
-    viewUrl: 'https://www.alura.com.br/',
-  },
-  {
-    title: 'Java OO e Fundamentos',
-    issuer: 'ALURA / FIAP (2024)',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80',
-    viewUrl: 'https://www.fiap.com.br/',
   },
 ]
 

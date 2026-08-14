@@ -30,12 +30,6 @@ export type TimelineItem = {
   description: string
 }
 
-export type Certificate = {
-  title: string
-  issuer: string
-  image: string
-  viewUrl: string
-}
 
 export type Testimonial = {
   name: string

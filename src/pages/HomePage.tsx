@@ -13,7 +13,6 @@ import ScrollProgress from '../components/ScrollProgress'
 import StatsSection from '../components/StatsSection'
 import { useTheme } from '../hooks/useTheme'
 
-const CertificatesSection = lazy(() => import('../components/CertificatesSection'))
 
 export default function HomePage() {
   const { isLightMode } = useTheme()
@@ -30,9 +29,6 @@ export default function HomePage() {
         <ProjectsSection />
         <StatsSection />
         <ExperienceSection />
-        <Suspense fallback={<div className="section-shell">Carregando seções...</div>}>
-          <CertificatesSection />
-        </Suspense>
         <BlogSection />
         <ContactSection />
       </main>
