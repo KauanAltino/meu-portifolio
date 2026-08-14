@@ -173,7 +173,7 @@ export const ABOUT_TIMELINE: TimelineItem[] = [
     year: '2025 - 2026',
     title: 'Pós-graduação em Data Analytics (FIAP Pós-Tech)',
     subtitle: 'Especialização em análise de dados',
-    description: 'Aprofundamento em Power BI, Python, SQL e visualização de dados para tomada de decisão.',
+    description: 'Aprofundamento em Power BI, Python, Streamlit, Machine Learning, Spark, SQL e visualização de dados para tomada de decisão.',
   },
 ]
 
@@ -187,14 +187,14 @@ export const EXPERIENCE_TIMELINE: TimelineItem[] = [
   {
     year: '2024 - Atual',
     title: 'Projetos de Dados em Desenvolvimento',
-    subtitle: 'Power BI, Python e SQL',
-    description: 'Desenvolvimento de dashboards de KPIs, análises exploratórias e modelagem de dados para evolução profissional contínua.',
+    subtitle: 'Power BI, Python, SQL e Engenharia de Dados',
+    description: 'Desenvolvimento de projetos envolvendo análise, tratamento, visualização e processamento de dados, com foco na construção de soluções práticas e evolução contínua em Data Analytics e Data Engineering.',
   },
   {
     year: 'Foco Atual',
-    title: 'Analista de Dados | Engenharia de Dados Júnior',
+    title: 'Data Analytics | Data Engineering',
     subtitle: 'Objetivo de carreira',
-    description: 'Atuar com dados em contexto corporativo, apoiando decisões por meio de análises, automações e boas práticas de dados.',
+    description: 'Atuar na área de Dados, desenvolvendo análises, pipelines e soluções para transformar dados em informações confiáveis e apoiar decisões de negócio.',
   },
 ]
 

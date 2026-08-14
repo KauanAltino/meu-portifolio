@@ -29,16 +29,16 @@ export default function AboutSection() {
         <GlassCard>
           <h3>Apresentação</h3>
           <p>
-            Sou Analista de Dados em transição para Engenharia de Dados, apaixonado por transformar dados brutos em informações 
-            estratégicas. Tenho experiência com Python, SQL, Power BI e automação de processos, buscando sempre desenvolver 
-            soluções que gerem eficiência e apoiem a tomada de decisão.
+            Sou profissional da área de Dados, com foco em Data Analytics e Data Engineering. 
+            Tenho experiência com Python, SQL, Power BI e automação de processos, atuando na análise, 
+            tratamento e transformação de dados para gerar insights e soluções que apoiem decisões e resultados de negócio.
           </p>
         </GlassCard>
         <GlassCard>
           <h3>Formação e Objetivos</h3>
           <p>
-            Meu objetivo é atuar como Engenheiro de Dados ou Analista de Dados, desenvolvendo pipelines, 
-            processos de ETL, modelagem de dados e soluções analíticas que apoiem decisões estratégicas e escaláveis.
+            Meu objetivo é atuar como Engenheiro ou Analista de Dados, desenvolvendo pipelines, processos de ETL, modelagem, 
+            tratamento e análise de dados, além de soluções analíticas com Python, SQL e Power BI que apoiem decisões estratégicas e escaláveis.
           </p>
         </GlassCard>
       </div>
