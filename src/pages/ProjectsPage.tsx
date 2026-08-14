@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FaGithub, FaMagnifyingGlass } from 'react-icons/fa6'
 import GlassCard from '../components/GlassCard'
 import Footer from '../components/Footer'
@@ -9,6 +9,11 @@ import { PROJECTS } from '../utils/constants'
 export default function ProjectsPage() {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('Todos')
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const categories = ['Todos', ...new Set(PROJECTS.map((project) => project.category))]
   const normalizedSearchTerm = searchTerm.trim().toLocaleLowerCase('pt-BR')
   const filteredProjects = PROJECTS.filter((project) => {
