@@ -34,9 +34,10 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
 
     return 'dark'
   })
-  const [isLightMode, setIsLightMode] = useState(
-    () => localStorage.getItem(LIGHT_MODE_STORAGE_KEY) === 'enabled',
-  )
+  const [isLightMode, setIsLightMode] = useState(() => {
+    const stored = localStorage.getItem(LIGHT_MODE_STORAGE_KEY)
+    return stored ? stored === 'enabled' : true
+  })
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)

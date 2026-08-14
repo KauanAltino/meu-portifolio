@@ -96,9 +96,6 @@ main {
 }
 
 .navbar {
-  position: sticky;
-  top: 0.75rem;
-  z-index: 60;
   margin-top: 0.75rem;
   padding: 0.8rem 1rem;
   border: 1px solid var(--line-color);
@@ -359,7 +356,6 @@ h4 {
 }
 
 .about-grid,
-.skills-grid,
 .projects-grid,
 .stats-grid,
 .blog-grid,
@@ -739,26 +735,6 @@ h4 {
 .blog-meta {
   color: var(--text-secondary);
   font-size: 0.82rem;
-}
-
-.testimonial-shell {
-  text-align: center;
-}
-
-.testimonial-card p {
-  font-size: clamp(1rem, 2.1vw, 1.22rem);
-  max-width: 860px;
-  margin: 0 auto;
-}
-
-.testimonial-card footer {
-  margin-top: 1rem;
-  display: grid;
-  gap: 0.2rem;
-}
-
-.testimonial-card span {
-  color: var(--text-secondary);
 }
 
 .carousel-dots {
