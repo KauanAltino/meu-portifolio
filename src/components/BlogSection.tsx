@@ -5,11 +5,13 @@ import SectionTitle from './SectionTitle'
 import { BLOG_PREVIEW } from '../utils/constants'
 
 export default function BlogSection() {
+  const featuredPosts = BLOG_PREVIEW.slice(0, 3)
+
   return (
     <section className="section-shell">
       <SectionTitle
         eyebrow="Blog"
-        title="Estrutura pronta para publicar artigos"
+        title="Artigos, estudos, boas práticas e insights"
         description="Conteúdo sobre engenharia, dados, design de interfaces e automação aplicada."
         action={
           <Link to="/blog" className="btn btn-secondary">
@@ -19,7 +21,7 @@ export default function BlogSection() {
       />
 
       <div className="blog-grid">
-        {BLOG_PREVIEW.map((post, index) => (
+        {featuredPosts.map((post, index) => (
           <GlassCard key={post.title} delay={index * 0.08}>
             <p className="blog-meta">
               {post.date} • {post.readTime}
