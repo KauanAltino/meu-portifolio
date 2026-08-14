@@ -1,20 +1,34 @@
-import { Link } from 'react-router-dom'
-import { FaGithub } from 'react-icons/fa6'
+import { useState } from 'react'
+import { FaGithub, FaMagnifyingGlass } from 'react-icons/fa6'
 import GlassCard from '../components/GlassCard'
 import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 import SectionTitle from '../components/SectionTitle'
 import { PROJECTS } from '../utils/constants'
 
 export default function ProjectsPage() {
+  const [searchTerm, setSearchTerm] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState('Todos')
+  const categories = ['Todos', ...new Set(PROJECTS.map((project) => project.category))]
+  const normalizedSearchTerm = searchTerm.trim().toLocaleLowerCase('pt-BR')
+  const filteredProjects = PROJECTS.filter((project) => {
+    const matchesCategory = selectedCategory === 'Todos' || project.category === selectedCategory
+    const searchableContent = [
+      project.title,
+      project.description,
+      project.category,
+      project.status,
+      ...project.technologies,
+    ]
+      .join(' ')
+      .toLocaleLowerCase('pt-BR')
+
+    return matchesCategory && searchableContent.includes(normalizedSearchTerm)
+  })
+
   return (
-    <div className="blog-page">
-      <header className="blog-page-header">
-        <p>Projetos</p>
-        <h1>Portfólio completo de dados e automação</h1>
-        <p>
-          Reunião dos projetos para análise, engenharia de dados, automação e estudos técnicos.
-        </p>
-      </header>
+    <div className="blog-page projects-page">
+      <Navbar pageTitle="Projetos" />
 
       <section className="projects-page-section">
         <SectionTitle
@@ -23,8 +37,34 @@ export default function ProjectsPage() {
           description="Explore a lista completa e use este espaço para comentar sobre as soluções apresentadas."
         />
 
+        <div className="projects-filters" aria-label="Filtros de projetos">
+          <label className="projects-search">
+            <FaMagnifyingGlass aria-hidden="true" />
+            <input
+              type="search"
+              value={searchTerm}
+              onChange={(event) => setSearchTerm(event.target.value)}
+              placeholder="Buscar por projeto, tecnologia ou palavra-chave"
+              aria-label="Buscar projetos"
+            />
+          </label>
+
+          <div className="projects-category-filters" aria-label="Filtrar por categoria">
+            {categories.map((category) => (
+              <button
+                key={category}
+                type="button"
+                className={selectedCategory === category ? 'is-active' : ''}
+                onClick={() => setSelectedCategory(category)}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </div>
+
         <div className="projects-grid projects-grid--full">
-          {PROJECTS.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <GlassCard key={project.title} delay={index * 0.02} className="project-card">
               <img src={project.image} alt={`Imagem do projeto ${project.title}`} loading="lazy" />
               <div className="project-content">
@@ -50,11 +90,12 @@ export default function ProjectsPage() {
           ))}
         </div>
 
+        {filteredProjects.length === 0 && (
+          <p className="projects-empty-state">Nenhum projeto encontrado com estes filtros.</p>
+        )}
+
         <div className="projects-page-bottom">
-          <Link to="/" className="btn btn-secondary projects-return-button">
-            Voltar para o portfólio
-          </Link>
-          <Footer backHref="/#inicio" />
+          <Footer backHref="#" />
         </div>
       </section>
     </div>

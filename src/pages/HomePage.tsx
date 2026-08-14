@@ -11,15 +11,18 @@ import Navbar from '../components/Navbar'
 import ProjectsSection from '../components/ProjectsSection'
 import ScrollProgress from '../components/ScrollProgress'
 import StatsSection from '../components/StatsSection'
+import { useTheme } from '../hooks/useTheme'
 
 const CertificatesSection = lazy(() => import('../components/CertificatesSection'))
 
 export default function HomePage() {
+  const { isLightMode } = useTheme()
+
   return (
     <div className="app-shell">
-      <LoadingScreen />
-      <ScrollProgress />
-      <CustomCursor />
+      {!isLightMode && <LoadingScreen />}
+      {!isLightMode && <ScrollProgress />}
+      {!isLightMode && <CustomCursor />}
       <Navbar />
       <main>
         <HeroSection />

@@ -12,11 +12,14 @@ import type { Theme } from '../utils/types'
 type ThemeContextValue = {
   theme: Theme
   toggleTheme: () => void
+  isLightMode: boolean
+  toggleLightMode: () => void
 }
 
 const ThemeContext = createContext<ThemeContextValue | undefined>(undefined)
 
 const STORAGE_KEY = 'portfolio-theme'
+const LIGHT_MODE_STORAGE_KEY = 'portfolio-light-mode'
 
 type ThemeProviderProps = {
   children: ReactNode
@@ -31,22 +34,36 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
 
     return 'dark'
   })
+  const [isLightMode, setIsLightMode] = useState(
+    () => localStorage.getItem(LIGHT_MODE_STORAGE_KEY) === 'enabled',
+  )
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
     localStorage.setItem(STORAGE_KEY, theme)
   }, [theme])
 
+  useEffect(() => {
+    document.documentElement.toggleAttribute('data-light-mode', isLightMode)
+    localStorage.setItem(LIGHT_MODE_STORAGE_KEY, isLightMode ? 'enabled' : 'disabled')
+  }, [isLightMode])
+
   const toggleTheme = useCallback(() => {
     setTheme((current) => (current === 'dark' ? 'light' : 'dark'))
+  }, [])
+
+  const toggleLightMode = useCallback(() => {
+    setIsLightMode((current) => !current)
   }, [])
 
   const value = useMemo(
     () => ({
       theme,
       toggleTheme,
+      isLightMode,
+      toggleLightMode,
     }),
-    [theme, toggleTheme],
+    [theme, toggleTheme, isLightMode, toggleLightMode],
   )
 
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>

@@ -4,6 +4,8 @@ import LoadingScreen from './components/LoadingScreen'
 
 const HomePage = lazy(() => import('./pages/HomePage'))
 const BlogPage = lazy(() => import('./pages/BlogPage'))
+const ExploratoryAnalysisPage = lazy(() => import('./pages/ExploratoryAnalysisPage'))
+const SqlDataAnalyticsPage = lazy(() => import('./pages/SqlDataAnalyticsPage'))
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 
@@ -13,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/analise-exploratoria-python-pandas" element={<ExploratoryAnalysisPage />} />
+        <Route path="/blog/sql-data-analytics" element={<SqlDataAnalyticsPage />} />
         <Route path="/projetos" element={<ProjectsPage />} />
         <Route path="/home" element={<Navigate replace to="/" />} />
         <Route path="*" element={<NotFoundPage />} />

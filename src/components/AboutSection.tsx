@@ -3,7 +3,19 @@ import GlassCard from './GlassCard'
 import { ABOUT_TIMELINE } from '../utils/constants'
 
 export default function AboutSection() {
-  const keySkills = ['Power BI', 'Python', 'SQL', 'Excel', 'ETL', 'Pandas']
+  const keySkills = [
+    'Power BI',
+    'Python',
+    'SQL',
+    'Excel',
+    'ETL / ELT',
+    'Data Warehouse',
+    'Pipelines',
+    'Cloud',
+    'Machine Learning',
+    'Databricks',
+    'Spark',
+  ]
 
   return (
     <section id="sobre" className="section-shell">

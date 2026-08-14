@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FaArrowUpRightFromSquare, FaGithub } from 'react-icons/fa6'
+import { FaGithub } from 'react-icons/fa6'
 import GlassCard from './GlassCard'
 import SectionTitle from './SectionTitle'
 import { PROJECTS } from '../utils/constants'
