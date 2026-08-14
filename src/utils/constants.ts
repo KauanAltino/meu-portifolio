@@ -24,6 +24,24 @@ export const NAV_LINKS = [
 
 export const PROJECTS: Project[] = [
   {
+    title: 'StreamLit - Aplicação de Visualização de Dados',
+    description: 'Aplicação analítica desenvolvida em Streamlit para apoiar a visualização e a predição de risco de defasagem escolar com base em indicadores educacionais e socioemocionais.',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80',
+    technologies: ['Python', 'Streamlit', 'Pandas', 'Scikit-learn', 'Data Visualization', 'Machine Learning', 'Plotly', 'Joblib', 'Matplotlib'],
+    status: 'Concluído',
+    category: 'Python',
+    githubUrl: 'https://github.com/KauanAltino/Datathon-Passos-Magicos-StreamLit/tree/StreamLit',
+  },
+  {
+    title: 'DevOps Python FIAP',
+    description: 'Projeto de implantação containerizada com Python e Docker. Aplicação Python simples que demonstra um processo de implantação bem-sucedido. O projeto utiliza Docker para containerização, facilitando a execução em diferentes ambientes.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
+    technologies: ['Python', 'Docker', 'DevOps'],
+    status: 'Concluído',
+    category: 'Python',
+    githubUrl: 'https://github.com/KauanAltino/CP2_DEVOPS_PYTHON_FIAP',
+  },
+  {
     title: 'DayToday API',
     description: 'API REST desenvolvida para gerenciar rotinas e hábitos pessoais, permitindo o cadastro e acompanhamento de metas de forma organizada.',
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
@@ -49,15 +67,6 @@ export const PROJECTS: Project[] = [
     status: 'Concluído',
     category: 'Java',
     githubUrl: 'https://github.com/KauanAltino/CP2_DEVOPS_FIAP',
-  },
-  {
-    title: 'DevOps Python FIAP',
-    description: 'Projeto de implantação containerizada com Python e Docker. Aplicação Python simples que demonstra um processo de implantação bem-sucedido. O projeto utiliza Docker para containerização, facilitando a execução em diferentes ambientes.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
-    technologies: ['Python', 'Docker', 'DevOps'],
-    status: 'Concluído',
-    category: 'Python',
-    githubUrl: 'https://github.com/KauanAltino/CP2_DEVOPS_PYTHON_FIAP',
   },
   {
     title: 'Sistema de Alarme IOT',
@@ -87,15 +96,6 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/KauanAltino/SustEnergy',
   },
   {
-    title: 'Monitoramento e Conservação Marinha com ML (Machine Learning)',
-    description: 'Este projeto visa desenvolver modelos de Machine Learning para prever a poluição da água com base na qualidade do ar em diferentes cidades ao redor do mundo. Esses modelos podem contribuir para o monitoramento da saúde dos oceanos e a conservação de seus ecossistemas.',
-    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80',
-    technologies: ['Python', 'Machine Learning', 'Data Analysis', 'Data Visualization', 'Pandas', 'Scikit-learn'],
-    status: 'Concluído',
-    category: 'Python',
-    githubUrl: 'https://github.com/KauanAltino/1GS_IA_FIAP2024',
-  },
-  {
     title: 'Sistema de Energia IOT',
     description: 'Sistema de monitoramento de energia integrado a dispositivos IoT. O sistema é composto por dois dispositivos: um sensor que coleta dados sobre consumo e geração de energia, e um atuador.',
     image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80',
@@ -112,15 +112,6 @@ export const PROJECTS: Project[] = [
     status: 'Concluído',
     category: 'Java',
     githubUrl: 'https://github.com/KauanAltino/programa_devops',
-  },
-  {
-    title: 'StreamLit - Aplicação de Visualização de Dados',
-    description: 'Aplicação analítica desenvolvida em Streamlit para apoiar a visualização e a predição de risco de defasagem escolar com base em indicadores educacionais e socioemocionais.',
-    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80',
-    technologies: ['Python', 'Streamlit', 'Pandas', 'Scikit-learn', 'Data Visualization', 'Machine Learning', 'Plotly', 'Joblib', 'Matplotlib'],
-    status: 'Concluído',
-    category: 'Python',
-    githubUrl: 'https://github.com/KauanAltino/Datathon-Passos-Magicos-StreamLit/tree/StreamLit',
   },
   {
     title: 'DataScience - ALURA',

@@ -12,7 +12,7 @@ export default function ProjectsSection() {
       <SectionTitle
         eyebrow="Projetos"
         title="Projetos em destaque"
-        description="Dois projetos principais na home para manter o site leve; a página completa reúne todo o portfólio."
+        description=""
       />
 
       <div className="projects-grid">
