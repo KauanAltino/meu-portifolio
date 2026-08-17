@@ -71,7 +71,10 @@ export default function ProjectsPage() {
         <div className="projects-grid projects-grid--full">
           {filteredProjects.map((project, index) => (
             <GlassCard key={project.title} delay={index * 0.02} className="project-card">
-              <img src={project.image} alt={`Imagem do projeto ${project.title}`} loading="lazy" />
+              <div className="project-image-wrap">
+                <img src={project.image} alt={`Imagem do projeto ${project.title}`} loading="lazy" />
+                <span className="project-image-badge">Foto do projeto em breve</span>
+              </div>
               <div className="project-content">
                 <div className="project-head">
                   <h3>{project.title}</h3>
