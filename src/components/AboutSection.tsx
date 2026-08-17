@@ -17,6 +17,33 @@ export default function AboutSection() {
     'Spark',
   ]
 
+  const languages = [
+    {
+      name: 'Inglês',
+      level: 'Avançado (C1)',
+      description:
+        'Capacidade de compreender textos complexos, participar de reuniões e apresentações, além de produzir relatórios e documentação técnica em inglês.',
+    },
+    {
+      name: 'Espanhol',
+      level: 'Básico (A2)',
+      description:
+        'Capacidade de compreender frases simples e expressões do dia a dia, além de se comunicar em situações básicas.',
+    },
+  ]
+  const languages2 = [
+      {
+      name: 'Português',
+      level: 'Nativo',
+      description:
+        'Capacidade de compreender e se comunicar fluentemente em português, com domínio da gramática, vocabulário e expressões idiomáticas.',
+    },
+    {
+      name: 'Francês',
+      level: 'Em estudo',
+      description: 'Aprendizado em andamento, com foco em vocabulário e compreensão básica.',
+    },
+  ]
   return (
     <section id="sobre" className="section-shell">
       <SectionTitle
@@ -41,22 +68,39 @@ export default function AboutSection() {
             tratamento e análise de dados, além de soluções analíticas com Python, SQL e Power BI que apoiem decisões estratégicas e escaláveis.
           </p>
         </GlassCard>
-        <div>
-          <GlassCard>
-            <h3>Idiomas</h3>
-            <p>
-              -- Inglês Avançado (C1) - Capacidade de compreender textos complexos, participar de reuniões e apresentações, 
-              além de produzir relatórios e documentação técnica em inglês.
-            </p>
-            <p>
-              -- Espanhol Básico (A2) - Capacidade de compreender frases simples e expressões do dia a dia, além de se comunicar em situações básicas.
-            </p>
-            <p>
-              -- Português Nativo - Capacidade de compreender e se comunicar fluentemente em português, com domínio da gramática, vocabulário e expressões idiomáticas.  
-            </p>
-            <p>
-              -- Estudando Francês
-            </p>
+        <div className="about-languages">
+          <GlassCard className="about-languages-card">
+            <h3 style={{ textAlign: 'center' }}>Idiomas</h3>
+
+            <div className="language-columns">
+              <ul className="language-list">
+                {languages.map((language) => (
+                  <li key={language.name}>
+                    <div className="language-item-head">
+                      <strong>{language.name}</strong>
+                      <span className="language-level">
+                        {language.level}
+                      </span>
+                    </div>
+                    <p>{language.description}</p>
+                  </li>
+                ))}
+              </ul>
+
+              <ul className="language-list">
+                {languages2.map((language) => (
+                  <li key={language.name}>
+                    <div className="language-item-head">
+                      <strong>{language.name}</strong>
+                      <span className="language-level">
+                        {language.level}
+                      </span>
+                    </div>
+                    <p>{language.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </GlassCard>
         </div>
       </div>

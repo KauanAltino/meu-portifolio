@@ -382,6 +382,47 @@ h4 {
   line-height: 1.45;
 }
 
+.about-languages {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-languages-card {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.language-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.language-level {
+  border: 1px solid var(--line-color);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.language-columns {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  gap: 2rem;
+}
+
+.language-list {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
 .about-grid h3,
 .blog-grid h3,
 .projects-grid h3,
