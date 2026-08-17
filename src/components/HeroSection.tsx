@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa6'
+import profilePhoto from '../utils/imagem_perfil/perfil.jpg'
 
 export default function HeroSection() {
   return (
@@ -12,8 +13,8 @@ export default function HeroSection() {
         transition={{ duration: 0.6, delay: 0.05 }}
       >
         <img
-          src="/profile-placeholder.svg"
-          alt="Foto de perfil placeholder de Kauan Altino Gianesini"
+          src={profilePhoto}
+          alt="Foto de perfil de Kauan Altino Gianesini"
           loading="eager"
         />
       </motion.div>
