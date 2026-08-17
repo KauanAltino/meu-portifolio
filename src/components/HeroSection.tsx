@@ -69,7 +69,7 @@ export default function HeroSection() {
         <a href="https://github.com/KauanAltino" target="_blank" rel="noreferrer" className="btn btn-ghost">
           <FaGithub /> GitHub
         </a>
-        <a href="/cv-kauan-altino.pdf" className="btn btn-secondary" download>
+        <a href="/KauanAltino_curriculo.pdf" className="btn btn-secondary" download>
           <FaDownload /> Meu Curriculo
         </a>        
       </motion.div>
