@@ -41,6 +41,24 @@ export default function AboutSection() {
             tratamento e análise de dados, além de soluções analíticas com Python, SQL e Power BI que apoiem decisões estratégicas e escaláveis.
           </p>
         </GlassCard>
+        <div>
+          <GlassCard>
+            <h3>Idiomas</h3>
+            <p>
+              -- Inglês Avançado (C1) - Capacidade de compreender textos complexos, participar de reuniões e apresentações, 
+              além de produzir relatórios e documentação técnica em inglês.
+            </p>
+            <p>
+              -- Espanhol Básico (A2) - Capacidade de compreender frases simples e expressões do dia a dia, além de se comunicar em situações básicas.
+            </p>
+            <p>
+              -- Português Nativo - Capacidade de compreender e se comunicar fluentemente em português, com domínio da gramática, vocabulário e expressões idiomáticas.  
+            </p>
+            <p>
+              -- Estudando Francês
+            </p>
+          </GlassCard>
+        </div>
       </div>
 
       <div className="about-skills-strip" aria-label="Competências principais">
