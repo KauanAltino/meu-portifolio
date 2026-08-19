@@ -1,0 +1,21 @@
+{
+  "name": "Portfólio | Kauan Altino Gianesini",
+  "short_name": "KAG Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090B",
+  "theme_color": "#09090B",
+  "description": "Portfólio profissional de Analista de Dados.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
