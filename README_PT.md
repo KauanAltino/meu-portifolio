@@ -85,7 +85,6 @@ npm run preview
 
 ### Deploy
 - **GitHub Pages** - Hospedagem
-- **gh-pages** - Deploy automático
 
 ---
 
@@ -151,7 +150,6 @@ VITE_BASE_PATH=/meu-portifolio/
 | `npm run build` | Cria build otimizada |
 | `npm run preview` | Visualiza a build localmente |
 | `npm run lint` | Executa ESLint |
-| `npm run deploy` | Deploy para GitHub Pages |
 
 ---
 
@@ -173,7 +171,8 @@ VITE_BASE_PATH=/meu-portifolio/
 ## 🔧 Troubleshooting
 
 ### Página em branco após deploy
-- Verifique se a branch `gh-pages` está selecionada nas **Settings** → **Pages**
+- Verifique se o GitHub Pages está configurado para usar apenas uma estratégia de deploy
+- Evite publicar manualmente para a branch `gh-pages` quando já existir um deploy automático configurado
 - Limpe o cache do navegador (Ctrl + Shift + Delete)
 
 ### Rotas não funcionam
