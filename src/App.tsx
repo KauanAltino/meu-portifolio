@@ -1,6 +1,5 @@
-import { lazy, Suspense } from 'react'
+import { lazy } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
-import LoadingScreen from './components/LoadingScreen'
 
 const HomePage = lazy(() => import('./pages/HomePage'))
 const BlogPage = lazy(() => import('./pages/BlogPage'))
@@ -11,17 +10,15 @@ const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 
 function App() {
   return (
-    <Suspense fallback={<LoadingScreen isVisible />}>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/analise-exploratoria-python-pandas" element={<ExploratoryAnalysisPage />} />
-        <Route path="/blog/sql-data-analytics" element={<SqlDataAnalyticsPage />} />
-        <Route path="/projetos" element={<ProjectsPage />} />
-        <Route path="/home" element={<Navigate replace to="/" />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-    </Suspense>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/blog" element={<BlogPage />} />
+      <Route path="/blog/analise-exploratoria-python-pandas" element={<ExploratoryAnalysisPage />} />
+      <Route path="/blog/sql-data-analytics" element={<SqlDataAnalyticsPage />} />
+      <Route path="/projetos" element={<ProjectsPage />} />
+      <Route path="/home" element={<Navigate replace to="/" />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   )
 }
 

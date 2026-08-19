@@ -1332,30 +1332,6 @@ h4 {
   border-color: rgba(15, 23, 42, 0.35);
 }
 
-.loading-screen {
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-  background: var(--bg-primary);
-  display: grid;
-  place-content: center;
-  gap: 0.6rem;
-  text-align: center;
-}
-
-.loading-logo {
-  width: 88px;
-  aspect-ratio: 1;
-  border: 1px solid var(--line-color);
-  border-radius: 1.2rem;
-  display: grid;
-  place-items: center;
-  font-family: 'Sora', sans-serif;
-  font-size: 1.45rem;
-  margin: 0 auto;
-  background: linear-gradient(130deg, rgba(59, 130, 246, 0.18), rgba(124, 58, 237, 0.22));
-}
-
 @media (max-width: 980px) {
   .navbar {
     top: 0.45rem;
