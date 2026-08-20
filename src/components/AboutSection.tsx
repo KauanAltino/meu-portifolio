@@ -30,9 +30,7 @@ export default function AboutSection() {
       description:
         'Capacidade de compreender frases simples e expressões do dia a dia, além de se comunicar em situações básicas.',
     },
-  ]
-  const languages2 = [
-      {
+    {
       name: 'Português',
       level: 'Nativo',
       description:
@@ -75,20 +73,6 @@ export default function AboutSection() {
             <div className="language-columns">
               <ul className="language-list">
                 {languages.map((language) => (
-                  <li key={language.name}>
-                    <div className="language-item-head">
-                      <strong>{language.name}</strong>
-                      <span className="language-level">
-                        {language.level}
-                      </span>
-                    </div>
-                    <p>{language.description}</p>
-                  </li>
-                ))}
-              </ul>
-
-              <ul className="language-list">
-                {languages2.map((language) => (
                   <li key={language.name}>
                     <div className="language-item-head">
                       <strong>{language.name}</strong>
