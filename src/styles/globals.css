@@ -578,16 +578,21 @@ h4 {
 
 .language-columns {
   display: grid;
-  grid-template-columns: 4fr 4fr;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .language-list {
   display: grid;
-  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2rem;
+  row-gap: 1.25rem;
   margin: 0.4rem 0 0;
   padding: 0;
   list-style: none;
+}
+
+.language-list li {
+  min-width: 0;
 }
 
 .about-grid h3,
