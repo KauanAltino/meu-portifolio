@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.VITE_BASE_PATH || '/',
+  base: '/meu-portifolio/',
   plugins: [react(), tailwindcss()],
   optimizeDeps: {
     exclude: ['react-icons', '@emailjs/browser', 'framer-motion'],
