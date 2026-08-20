@@ -90,10 +90,11 @@ a {
 }
 
 .app-shell {
-  width: min(1140px, 100% - 2rem);
+  width: min(1140px, calc(100% - 1rem));
   margin: 0 auto;
   position: relative;
   padding-bottom: 2.5rem;
+  box-sizing: border-box;
 }
 
 main {
@@ -970,16 +971,16 @@ h4 {
 
 .blog-page,
 .not-found-page {
-  width: min(1080px, 100% - 2rem);
+  width: min(1080px, calc(100% - 1rem));
   margin: 1rem auto;
 }
 
 .projects-page {
-  width: min(1440px, 100% - 2rem);
+  width: min(1440px, calc(100% - 1rem));
 }
 
 .blog-page--full {
-  width: min(1440px, 100% - 2rem);
+  width: min(1440px, calc(100% - 1rem));
 }
 
 .projects-page .footer,
@@ -1417,7 +1418,8 @@ h4 {
   .app-shell,
   .blog-page,
   .not-found-page {
-    width: min(100% - 1rem, 1140px);
+    width: calc(100% - 1rem);
+    max-width: 100%;
   }
 
   .section-shell {
