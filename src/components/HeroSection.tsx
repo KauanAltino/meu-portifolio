@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa6'
 import profilePhoto from '../utils/imagem_perfil/perfil.jpg'
 
+const resumeHref = `${import.meta.env.BASE_URL}KauanAltino_curriculo.pdf`
+
 function DesktopHero() {
   return (
     <section id="inicio" className="hero-section section-shell">
@@ -70,7 +72,7 @@ function DesktopHero() {
         <a href="https://github.com/KauanAltino" target="_blank" rel="noreferrer" className="btn btn-ghost">
           <FaGithub /> GitHub
         </a>
-        <a href="/KauanAltino_curriculo.pdf" className="btn btn-secondary" download>
+        <a href={resumeHref} className="btn btn-secondary" download>
           <FaDownload /> Meu Curriculo
         </a>
       </motion.div>
@@ -146,7 +148,7 @@ function MobileHero() {
         <a href="https://github.com/KauanAltino" target="_blank" rel="noreferrer" className="btn btn-ghost">
           <FaGithub /> GitHub
         </a>
-        <a href="/KauanAltino_curriculo.pdf" className="btn btn-secondary" download>
+        <a href={resumeHref} className="btn btn-secondary" download>
           <FaDownload /> Meu Curriculo
         </a>
       </motion.div>
