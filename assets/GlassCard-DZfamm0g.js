@@ -1,0 +1,1 @@
+import{n as e}from"./index-BaT0WwWq.js";import{l as t}from"./Navbar-BAJ-mWBR.js";var n=e();function r({children:e,className:r=``,delay:i=0}){return(0,n.jsx)(t.article,{className:`glass-card ${r}`.trim(),initial:{opacity:0,y:14},whileInView:{opacity:1,y:0},viewport:{once:!0,margin:`-70px`},transition:{duration:.45,delay:i},children:e})}export{r as t};
