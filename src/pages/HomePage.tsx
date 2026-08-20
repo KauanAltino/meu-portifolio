@@ -11,7 +11,6 @@ import ScrollProgress from '../components/ScrollProgress'
 import StatsSection from '../components/StatsSection'
 import { useTheme } from '../hooks/useTheme'
 
-
 export default function HomePage() {
   const { isLightMode } = useTheme()
 

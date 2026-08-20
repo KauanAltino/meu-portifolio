@@ -7,7 +7,9 @@ export default function CustomCursor() {
 
   useEffect(() => {
     const isTouch = window.matchMedia('(pointer: coarse)').matches
-    if (isTouch) {
+    const isDesktopLayout = window.innerWidth >= 980
+
+    if (isTouch || isDesktopLayout) {
       return undefined
     }
 
@@ -26,6 +28,10 @@ export default function CustomCursor() {
       window.removeEventListener('mouseleave', onLeave)
     }
   }, [])
+
+  if (typeof window !== 'undefined' && (window.matchMedia('(pointer: coarse)').matches || window.innerWidth >= 980)) {
+    return null
+  }
 
   return (
     <motion.div

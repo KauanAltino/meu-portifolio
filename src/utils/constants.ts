@@ -143,7 +143,7 @@ export const PROJECTS: Project[] = [
     title: 'Meu portfólio pessoal',
     description: 'Projeto de estudo em desenvolvimento de um portfólio pessoal. O repositório contém scripts e documentação relacionados à implementação de funcionalidades do portfólio.',
     image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80',
-    technologies: [],
+    technologies: ['typescript', 'JavaScript' ,'react', 'tailwindcss', 'vite', 'framer-motion', 'react-icons'],
     status: 'Em evolução',
     category: 'Web',
     githubUrl: 'https://github.com/KauanAltino/meu-portifolio',
