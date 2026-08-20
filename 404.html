@@ -4,14 +4,11 @@
     <meta charset="utf-8" />
     <title>Redirecionando...</title>
     <script>
-      const segmentCount = 1;
       const l = window.location;
-      const base = l.pathname.split('/').slice(0, 1 + segmentCount).join('/');
-      const redirect = `${base}/?p=${l.pathname
-        .slice(1)
-        .split('/')
-        .slice(segmentCount)
-        .join('/')}${l.search ? `&q=${l.search.slice(1)}` : ''}${l.hash}`;
+      const pathname = l.pathname.replace(/\/$/, '');
+      const repoBase = pathname.includes('/meu-portifolio') ? '/meu-portifolio' : '';
+      const route = pathname.replace(repoBase, '').replace(/^\//, '');
+      const redirect = `${repoBase || '/'}${route ? `/?p=${encodeURIComponent(route)}` : '/'}${l.search ? `&q=${encodeURIComponent(l.search.slice(1))}` : ''}${l.hash}`;
       l.replace(redirect);
     </script>
   </head>
